@@ -2,7 +2,6 @@
 <html>
   <head>
     <style>
-      body {background-color:lightgray}
       h2   {color:blue}
       p    {color:green}
       ul {
@@ -20,6 +19,10 @@
         display: block;
         width: 60px;
         background-color: #dddddd;
+      }
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
       }
     </style>
   </head>
@@ -39,15 +42,32 @@
     This is our team below.
   </p>
   
-  <ul>
-    <li>Angie Nguyen</li>
-    <li>Charles Cruz</li>
-    <li>Edward Chiou</li>
-    <li>Jiajie Duan</li>
-    <li>Wai Ho Leung</li>
-  </ul>  
-  
-  We will do more later :)
+ <table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+  </tr>
+  <tr>
+    <td>Angie</td>
+    <td>Nguyen</td> 
+  </tr>
+  <tr>
+    <td>Charles</td>
+    <td>Cruz</td> 
+  </tr>
+  <tr>
+    <td>Edward</td>
+    <td>Chiou</td> 
+  </tr>
+  <tr>
+    <td>Jiajie</td>
+    <td>Duan</td> 
+  </tr>
+  <tr>
+    <td>Wai Ho</td>
+    <td>Leung</td> 
+  </tr>
+</table>
 
 </body>
 <footer>
