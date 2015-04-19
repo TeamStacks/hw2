@@ -1,5 +1,5 @@
 h2 {
- color:blue
+ color:#4285a5;
 }
 
 p {
@@ -7,16 +7,19 @@ p {
 }
 
 body {
- /* font-family: 'Open Sans', sans-serif; */
- font-family: 'Titillium Web', sans-serif;
+ font-family: 'Open Sans', sans-serif;
+ /*font-family: 'Titillium Web', sans-serif;*/
  margin: 0;
  padding: 0;
 }
 
 footer {
  background-color: #dddddd;
- margin-top: 10px;
  padding: 50px 0 50px 0;
+}
+
+section {
+ margin: 50px;
 }
 
 nav {
