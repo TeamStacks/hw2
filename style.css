@@ -6,6 +6,9 @@ p {
  color:green
 }
 
+footer {
+ background-color: #dddddd;
+}
 
 nav {
  display: block;
