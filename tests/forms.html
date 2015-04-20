@@ -27,7 +27,7 @@
 
 <section>
     <!-- BEGIN CONTENT OF THE PAGE! -->
-    <h2>This is an example form:</h2>
+    <h2>Forms:</h2>
 
     <form autocomplete="on" id="accountsetupform" oninput="x.value=parseInt(a.value)-parseInt(b.value)">
         <fieldset>
@@ -129,10 +129,117 @@
     <h2>This is an example of a field outside the form, but is still part of the form and is required:</h2>
     <input type="radio" name="requiredfield" value="female" form="accountsetupform" required>Must check
 
+    <h2>Code:</h2>
+
+    <textarea>
+    <form autocomplete="on" id="accountsetupform" oninput="x.value=parseInt(a.value)-parseInt(b.value)">
+        <fieldset>
+            <legend>Account Information:</legend>
+
+            Email (with placeholder):<br>
+            <input type="email" name="el" placeholder="email@place.duh" autofocus required/>
+
+            <br>Username:<br>
+            <input type="text" name="un" required>
+
+            <br>Password:<br>
+            <input type="password" name="pd" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal information:</legend>
+
+            First Name (spellcheck on):<br>
+            <input type="text" name="fn" spellcheck="true" required>
+
+            <br>Last Name (spellcheck off):<br>
+            <input type="text" name="ln" spellcheck="false" required>
+
+            <br>Telephone #:<br>
+            <input type="tel" name="tel" spellcheck="false" required>
+
+            <br>Gender:<br>
+            <input type="radio" name="sx" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="sx" id="female" value="female">
+            <label for="female">Female</label>
+
+            <br>Birthday (From 1980-01-01 to 2015-04-19):<br>
+            <input type="date" name="bd" min="1900-12-31" max="2015-04-19">
+
+            <br>Units accumulated (between 0 and 500, steps of 0.5):<br>
+            <input type="number" name="uts" min="0" max="500" step="0.5">
+
+            <br>Most disliked class (with predefined value, autocomplete is off):<br>
+            <input list="ucsdclasses" name="ucsd" value="CSE 101" autocomplete="off" required>
+            <datalist id="ucsdclasses">
+                <option value="">&nbsp;</option>
+                <option value="CSE 101">CSE 101</option>
+                <option value="CSE 105">CSE 105</option>
+                <option value="CSE 112">CSE 112</option>
+                <option value="CSE 131 (haha jk)">CSE 131 (haha jk)</option>
+                <option value="CSE 134B">CSE 134B</option>
+                <option value="CSE 150">CSE 150</option>
+                <option value="CSE 167">CSE 167</option>
+                <option value="CSE ZOMG GARY'S CLASS">CSE ZOMG GARY'S CLASS</option>
+            </datalist>
+
+            <br>Reasons for selecting the above:<br>
+            <select name="reasons" size="4" multiple required>
+                <optgroup label="Good Reasons">
+                    <option value="Professor">That Professor...</option>
+                    <option value="Midterm">That Midterm...</option>
+                    <option value="Sun God">That Sun God...</option>
+                    <option value="Hater">I'm just a hater</option>
+                </optgroup>
+                <optgroup label="Bad Reasons">
+                    <option value="Me">I'm not a smart man...</option>
+                </optgroup>
+            </select>
+
+            <br>Keygen:<br>
+            <keygen name="kg"/>
+
+            <br>Comments:<br>
+            <textarea name="comment" wrap="hard" cols="50">Enter text here...</textarea>
+
+            <br>Comments from Author:<br>
+            <textarea name="comment" wrap="hard" cols="50" readonly>CAN'T TOUCH THIS</textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Random:</legend>
+            0
+            <input type="range" id="a" value="50">100 +
+            <input type="number" id="b" value="50">=
+            <output name="x" for="a b"></output>
+
+
+            <br>Progess bar:<br>
+            <progress value="22" max="100"></progress>
+
+            <br>Just a button:<br>
+            <button type="button">I'm just a button...</button>
+
+            <br>Meter:<br>
+            <meter min="0" low="10" optimum="50" high="90" max="100" value="20"></meter>
+        </fieldset>
+
+
+        <input type="submit" value="Submit" >
+    </form>
+
+    <h2>This is an example of a field outside the form, but is still part of the form and is required:</h2>
+    <input type="radio" name="requiredfield" value="female" form="accountsetupform" required>Must check
+</textarea>
+
     <!-- END CONTENT OF THE PAGE! -->
 </section>
 <footer>
+
     &copy; 2015 Team Stacks &hearts; UCSD &hearts; CSE 134B
+
 </footer>
 </body>
+
 </html>
