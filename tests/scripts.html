@@ -35,17 +35,16 @@
   
 <p>If your browser supports JavaScript,</p>
 <ul>
-  <li>you should see "Hello World!" below.</li>
-
-    <script>
+  <li>you should see "Hello World!" below. Otherwise, you will see a message saying your browser failed, thanks to the noscript tag.</li>
+  <li>the blue 100x100 canvas with a small red square inside of it that I've drawn using JavaScript should show up below.</li>
+  <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
+</ul>
+ <script>
       document.write("<h1 style='background-color:yellow'>Hello World!</h1>")
     </script>
-    <noscript>Your browser does not support JavaScript!</noscript>
+    <noscript>Your browser failed!</noscript>
 
-  <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
-  <li>the blue 100x100 canvas with a small red square inside of it that I've drawn using JavaScript should show up below.</li>
-
-    <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+ <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
     <script>
       var c = document.getElementById("myCanvas");
       var ctx = c.getContext("2d");
@@ -54,7 +53,6 @@
       ctx.fillStyle = "red";
       ctx.fillRect(0, 0, 10,10)
     </script>
-</ul>
 
 <h3>Templates</h3>
 
@@ -131,20 +129,18 @@ if ('content' in document.createElement('template')) {
 }</script>
 
 <h2>Code</h2>
-<textarea>
-<p>If your browser supports JavaScript,</p>
+<textarea><p>If your browser supports JavaScript,</p>
 <ul>
-  <li>you should see "Hello World!" below.</li>
-
-    <script>
+  <li>you should see "Hello World!" below. Otherwise, you will see a message saying your browser failed, thanks to the noscript tag.</li>
+  <li>the blue 100x100 canvas with a small red square inside of it that I've drawn using JavaScript should show up below.</li>
+  <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
+</ul>
+ <script>
       document.write("<h1 style='background-color:yellow'>Hello World!</h1>")
     </script>
-    <noscript>Your browser does not support JavaScript!</noscript>
+    <noscript>Your browser failed!</noscript>
 
-  <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
-  <li>the blue 100x100 canvas with a small red square inside of it that I've drawn using JavaScript should show up below.</li>
-
-    <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+ <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
     <script>
       var c = document.getElementById("myCanvas");
       var ctx = c.getContext("2d");
@@ -153,7 +149,6 @@ if ('content' in document.createElement('template')) {
       ctx.fillStyle = "red";
       ctx.fillRect(0, 0, 10,10)
     </script>
-</ul>
 
 <h3>Templates</h3>
 
