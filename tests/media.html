@@ -28,13 +28,13 @@
 <section>
 <!-- BEGIN CONTENT OF THE PAGE! -->
 <h2>Media Example</h2>
-  
+
 <p>
   This is an example of using video tag.<br>
-  Source: <a href="http://en.wikipedia.org/wiki/File:Videoonwikipedia.ogv">http://en.wikipedia.org/wiki/File:Videoonwikipedia.ogv</a><br>
-  <video controls>
-    <source src="http://upload.wikimedia.org/wikipedia/commons/transcoded/f/f6/Videoonwikipedia.ogv/Videoonwikipedia.ogv.480p.webm" type="video/webm">
-    <track src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/tracks/developerStories-subtitles-en.vtt" />
+  Source: <a href="http://www.html5rocks.com/en/tutorials/track/basics/">http://www.html5rocks.com/en/tutorials/track/basics/</a><br>
+  <video controls class="trackSupported">
+    <source src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/video/developerStories-en.webm" type="video/webm" />
+    <track src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/tracks/developerStories-subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
   </video>
 </p>
 
@@ -62,16 +62,16 @@
 
 <h2>Code</h2>
 <textarea>
-<p>
-  This is an example of using video tag.<br>
-  Source: <a href="http://en.wikipedia.org/wiki/File:Videoonwikipedia.ogv">http://en.wikipedia.org/wiki/File:Videoonwikipedia.ogv</a><br>
-  <video controls>
-    <source src="http://upload.wikimedia.org/wikipedia/commons/transcoded/f/f6/Videoonwikipedia.ogv/Videoonwikipedia.ogv.480p.webm" type="video/webm">
-    <track src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/tracks/developerStories-subtitles-en.vtt" />
-  </video>
-</p>
+  <p>
+    This is an example of using video tag.<br>
+    Source: <a href="http://www.html5rocks.com/en/tutorials/track/basics/">http://www.html5rocks.com/en/tutorials/track/basics/</a><br>
+    <video controls class="trackSupported">
+      <source src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/video/developerStories-en.webm" type="video/webm" />
+      <track src="http://www.html5rocks.com/en/tutorials/track/basics/treeOfLife/tracks/developerStories-subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+  </p>
 
-<p>
+  <p>
   This is an example of using audio tag.<br>
   Source: <a href="http://commons.wikimedia.org/wiki/File:Example.ogg">http://commons.wikimedia.org/wiki/File:Example.ogg</a><br>
   <audio controls>
