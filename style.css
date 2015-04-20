@@ -28,3 +28,10 @@ nav {
  padding: 10px;
  background-color: #dddddd;
 }
+
+textarea {
+	margin: 10px;
+	width: 350px;
+	height: 200px;
+	font-family: 'Courier New';
+}
