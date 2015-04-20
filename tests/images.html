@@ -10,44 +10,45 @@
 
     <!--<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,600,600italic' rel='stylesheet' type='text/css'>
     -->
-    <link href="style.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
     <style>
-      table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
+      /* PUT ALL YOUR STYLES HERE */
     </style>
   </head>
 <body>
   <header>
     <nav>
       Team Stacks' HTML Guide!!!
-      <a href="index.html">Home</a> |
-      <a href="team.html">Team</a> |
-      <a href="conformance.html">Conformance</a>
+      <a href="../index.html">Home</a> |
+      <a href="../team.html">Team</a> |
+      <a href="../conformance.html">Conformance</a>
     </nav>
   </header>
 
 <section>
 <!-- BEGIN CONTENT OF THE PAGE! -->
-
-
-  <h2>
-    Welcome to Team Stacks' HTML Guide.
-  </h2>
-
-  <p>
-    Check out the links below to see the different examples of how HTML elements can be used!
-  </p>
+<h2>Images</h2>
   
-  <dl>
-    <li><a href="tests/forms.html">Form</a></li>
-    <li><a href="tests/tables.html">Tables</a></li>
-    <li><a href="tests/images.html">Images</a></li> 
-      <dd>Explores tags such as img, figure, figcaption, map, and area</dd>
-    <li><a href="tests/tables.html">blah</a></li>
-  </dl>
+<figure>
+  <img src="images-1.jpg" alt="Fat Hamster" usemap="#fathamster">
+  <figcaption>Fig1. - Click on the hamster.</figcaption>
+</figure>
 
+<map name="fathamster">
+  <area shape="rect" coords="270,20,420,180" alt="Sun" href="images-2.gif">
+</map>
+
+<h2>Code</h2>
+<textarea>
+<figure>
+  <img src="images-1.jpg" alt="Fat Hamster" usemap="#fathamster">
+  <figcaption>Fig1. - Click on the hamster.</figcaption>
+</figure>
+
+<map name="fathamster">
+  <area shape="rect" coords="270,20,420,180" alt="Sun" href="images-2.gif">
+</map>
+</textarea>
 
 <!-- END CONTENT OF THE PAGE! -->
 </section>
