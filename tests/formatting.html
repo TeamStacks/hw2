@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="keywords" content="">
+    <title>Team Stacks HW2</title>
+    <meta name="description" content="This is Team Stack' HW2 submission.">
+    <meta name="author" content="Team Stacks">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,300italic,600,600italic' rel='stylesheet' type='text/css'>
+    -->
+    <link href="../style.css" rel="stylesheet">
+    <style>
+    /* PUT ALL YOUR STYLES HERE */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            Team Stacks' HTML Guide!!!
+            <a href="../index.html">Home</a> |
+            <a href="../team.html">Team</a> |
+            <a href="../conformance.html">Conformance</a>
+        </nav>
+    </header>
+    <section>
+        <!-- BEGIN CONTENT OF THE PAGE! -->
+        <h2>Formatting elements</h2>
+        <section>
+            <h2>h1 - h6 (this is an h2 element)</h2>
+            <h1>This is h1</h1>
+            <h3>This is h3</h3>
+            <h4>This is h4</h4>
+            <h5>This is h5</h5>
+            <h6>This is h6</h6>
+        </section>
+        <section>
+            <h2>em</h2>
+            <p><em>This text is emphasized</em></p>
+        </section>
+        <section>
+            <h2>strong</h2>
+            <p><strong>This text is important</strong></p>
+        </section>
+        <section>
+            <h2>small</h2>
+            <p><small>This text is small</small></p>
+        </section>
+        <section>
+            <h2>s</h2>
+            <p>
+                <s>This text is no longer relevant</s>
+            </p>
+        </section>
+        <section>
+            <h2>cite</h2>
+            <p>
+                <cite>Rowling, J.K.. Harry Potter and the Sorcerers Stone.</cite> New York: Scholastic, 1997. Print.
+            </p>
+        </section>
+        <section>
+            <h2>q</h2>
+            <p>
+                <q>Be yourself; everyone else is already taken</q> - Oscar Wild
+            </p>
+        </section>
+        <section>
+            <h2>dfn (no title)</h2>
+            <p>
+                <dfn>XML</dfn> was designed to describe data.
+            </p>
+            <h2>dfn (with title)</h2>
+            <p>
+                <dfn title="EXtensible Markup Language">XML (Hover here to see tooltip)</dfn> was designed to describe data.
+            </p>
+            <h2>dfn (with abbr element)</h2>
+            <p>
+                <dfn>
+                    <abbr title="EXtensible Markup Language">XML (Hover here to see tooltip)</abbr>
+                </dfn> was designed to describe data.
+            </p>
+        </section>
+        <section>
+            <h2>abbr</h2>
+            <p>
+                <abbr title="JavaEE">J2EE (Hover here to see tooltip)</abbr> provides an API and runtime environment for developing and running enterprise software
+            </p>
+        </section>
+        <section>
+            <h2>data</h2>
+            <ul>
+                <li>
+                    <data value="0">Angie Nguyen</data>
+                </li>
+                <li>
+                    <data value="1">Charles Cruz</data>
+                </li>
+                <li>
+                    <data value="2">Edward Chiou</data>
+                </li>
+                <li>
+                    <data value="3">Jiajie Duan</data>
+                </li>
+                <li>
+                    <data value="4">Wai Ho Leunge</data>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>time</h2>
+            <p>
+                CSE 134B is on Mondays and Wednesdays from
+                <time>17:00</time> PM to
+                <time>18:20</time> PM.
+            </p>
+            <h2>time (with datetime attribute)</h2>
+            <p>
+                This assignment is due on
+                <time datetime="2015-04-20 17:00">Monday</time>.
+            </p>
+        </section>
+        <section>
+            <h2>code</h2>
+            <p><code>System.out.println("Hello World!")</code></p>
+        </section>
+        <section>
+            <h2>ins (with no attributes)</h2>
+            <p>
+                It is currently:
+                <ins>Spring quarter</ins>
+            </p>
+            <h2>ins (with datetime attribute)</h2>
+            <p>
+                It is currenty:
+                <ins datetime="2015-04-19">Spring quarter</ins>
+            </p>
+            <h2>ins (with cite attribute)</h2>
+            <p>
+                It is currently:
+                <ins cite="style.html">Spring quarter</ins>
+            </p>
+        </section>
+        <section>
+            <h2>del</h2>
+            <p>
+                It is currently:
+                <del>Winter quarter</del>
+                <ins>Spring quarter</ins>
+            </p>
+            <h2>del (with datetime attribute)</h2>
+            <p>
+                It is currenty:
+                <del datetime="2015-04-19">Winter quarter</del>
+                <ins datetime="2015-04-19">Spring quarter</ins>
+            </p>
+            <h2>del (with cite attribute)</h2>
+            <p>
+                It is currently:
+                <del cite="style.html">Winter quarter</del>
+                <ins cite="style.html">Spring quarter</ins>
+            </p>
+        </section>
+        <section>
+            <h2>kbd</h2>
+            <p>
+                <kbd>This is keyboard input</kbd>
+            </p>
+        </section>
+        <section>
+            <h2>var</h2>
+            <p>
+                <var>This is a variable element</var>
+            </p>
+        </section>
+        <section>
+            <h2>samp</h2>
+            <p>
+                <samp>This is sample output</samp>
+            </p>
+        </section>
+        <section>
+            <h2>blockquote (no attributes)</h2>
+            <blockquote>
+                "When game is going full retard, you can only go with it. If you start going against it, if you start going half retard, you're done for."
+            </blockquote>
+            <h2>blockquote (with cite attribute)</h2>
+            <blockquote cite="http://www.reddit.com/r/DotA2/comments/1w6tst/fnatic_n0tail_shadow_shaman_goes_full_davai_in_a/cez8ffi">"When game is going full retard, you can only go with it. If you start going against it, if you start going half retard, you're done for."
+            </blockquote>
+        </section>
+        <h2>Code</h2>
+        <textarea>
+            <h2>Formatting elements</h2>
+        <section>
+            <h2>h2 - h6</h2>
+            <h1>This is the most important heading</h1>
+            <h2>This is the 2nd most important heading</h2>
+            <h2>This is the 3rd most important heading</h2>
+            <h4>This is the 4th most important heading</h4>
+            <h5>This is the 5th most important heading</h5>
+            <h6>This is the least most important heading</h6>
+        </section>
+        <section>
+            <h2>em</h2>
+            <p><em>This text is emphasized</em></p>
+        </section>
+        <section>
+            <h2>strong</h2>
+            <p><strong>This text is important</strong></p>
+        </section>
+        <section>
+            <h2>small</h2>
+            <p><small>This text is small</small></p>
+        </section>
+        <section>
+            <h2>s</h2>
+            <p>
+                <s>This text is no longer relevant</s>
+            </p>
+        </section>
+        <section>
+            <h2>cite</h2>
+            <p>
+                <cite>Rowling, J.K.. Harry Potter and the Sorcerers Stone.</cite> New York: Scholastic, 1997. Print.
+            </p>
+        </section>
+        <section>
+            <h2>q</h2>
+            <p>
+                <q>Be yourself; everyone else is already taken</q> - Oscar Wild
+            </p>
+        </section>
+        <section>
+            <h2>dfn (no title)</h2>
+            <p>
+                <dfn>XML</dfn> was designed to describe data.
+            </p>
+            <h2>dfn (with title)</h2>
+            <p>
+                <dfn title="EXtensible Markup Language">XML (Hover here to see tooltip)</dfn> was designed to describe data.
+            </p>
+            <h2>dfn (with abbr element)</h2>
+            <p>
+                <dfn>
+                    <abbr title="EXtensible Markup Language">XML (Hover here to see tooltip)</abbr>
+                </dfn> was designed to describe data.
+            </p>
+        </section>
+        <section>
+            <h2>abbr</h2>
+            <p>
+                <abbr title="JavaEE">J2EE (Hover here to see tooltip)</abbr> provides an API and runtime environment for developing and running enterprise software
+            </p>
+        </section>
+        <section>
+            <h2>data</h2>
+            <ul>
+                <li>
+                    <data value="0">Angie Nguyen</data>
+                </li>
+                <li>
+                    <data value="1">Charles Cruz</data>
+                </li>
+                <li>
+                    <data value="2">Edward Chiou</data>
+                </li>
+                <li>
+                    <data value="3">Jiajie Duan</data>
+                </li>
+                <li>
+                    <data value="4">Wai Ho Leunge</data>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>time</h2>
+            <p>
+                CSE 134B is on Mondays and Wednesdays from
+                <time>17:00</time> PM to
+                <time>18:20</time> PM.
+            </p>
+            <h2>time (with datetime attribute)</h2>
+            <p>
+                This assignment is due on
+                <time datetime="2015-04-20 17:00">Monday</time>.
+            </p>
+        </section>
+        <section>
+            <h2>code</h2>
+            <p><code>System.out.println("Hello World!")</code></p>
+        </section>
+        <section>
+            <h2>ins (with no attributes)</h2>
+            <p>
+                It is currently:
+                <ins>Spring quarter</ins>
+            </p>
+            <h2>ins (with datetime attribute)</h2>
+            <p>
+                It is currenty:
+                <ins datetime="2015-04-19">Spring quarter</ins>
+            </p>
+            <h2>ins (with cite attribute)</h2>
+            <p>
+                It is currently:
+                <ins cite="style.html">Spring quarter</ins>
+            </p>
+        </section>
+        <section>
+            <h2>del</h2>
+            <p>
+                It is currently:
+                <del>Winter quarter</del>
+                <ins>Spring quarter</ins>
+            </p>
+            <h2>del (with datetime attribute)</h2>
+            <p>
+                It is currenty:
+                <del datetime="2015-04-19">Winter quarter</del>
+                <ins datetime="2015-04-19">Spring quarter</ins>
+            </p>
+            <h2>del (with cite attribute)</h2>
+            <p>
+                It is currently:
+                <del cite="style.html">Winter quarter</del>
+                <ins cite="style.html">Spring quarter</ins>
+            </p>
+        </section>
+        <section>
+            <h2>kbd</h2>
+            <p>
+                <kbd>This is keyboard input</kbd>
+            </p>
+        </section>
+        <section>
+            <h2>var</h2>
+            <p>
+                <var>This is a variable element</var>
+            </p>
+        </section>
+        <section>
+            <h2>samp</h2>
+            <p>
+                <samp>This is sample output</samp>
+            </p>
+        </section>
+        <section>
+            <h2>blockquote (no attributes)</h2>
+            <blockquote>
+                "When game is going full retard, you can only go with it. If you start going against it, if you start going half retard, you're done for."
+            </blockquote>
+            <h2>blockquote (with cite attribute)</h2>
+            <blockquote cite="http://www.reddit.com/r/DotA2/comments/1w6tst/fnatic_n0tail_shadow_shaman_goes_full_davai_in_a/cez8ffi">"When game is going full retard, you can only go with it. If you start going against it, if you start going half retard, you're done for."
+            </blockquote>
+            </section>
+        </textarea>
+        <!-- END CONTENT OF THE PAGE! -->
+    </section>
+    <footer>
+        &copy; 2015 Team Stacks &hearts; UCSD &hearts; CSE 134B
+    </footer>
+</body>
