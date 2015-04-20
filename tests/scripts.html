@@ -12,7 +12,11 @@
     -->
     <link href="../style.css" rel="stylesheet">
     <style>
-      /* PUT ALL YOUR STYLES HERE */
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
     </style>
   </head>
 <body>
@@ -30,31 +34,200 @@
 <h2>Scripts</h2>
   
 <p>If your browser supports JavaScript,</p>
-  <ul>
-    <li>you should see "Hello World!" below.</li>
-    <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
-  </ul>
+<ul>
+  <li>you should see "Hello World!" below.</li>
 
+    <script>
+      document.write("<h1 style='background-color:yellow'>Hello World!</h1>")
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+  <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
+  <li>the blue 100x100 canvas with a small red square inside of it that I've drawn using JavaScript should show up below.</li>
+
+    <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(0, 0, 100, 100);
+      ctx.fillStyle = "red";
+      ctx.fillRect(0, 0, 10,10)
+    </script>
+</ul>
+
+<h3>Templates</h3>
+
+<table id="producttable2">
+  <caption>This is a table that holds no rows in basic HTML.</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Favorite Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- existing data could optionally be included here -->
+  </tbody>
+</table>
+
+<p>We make a template for the row in HTML, and then server the actual data using JavaScript.</p>
+
+<template id="productrow">
+  <tr>
+    <td class="record"></td>
+    <td></td>
+  </tr>
+</template>
 
 <script>
-document.write("<h1 style='background-color:yellow'>Hello World!</h1>")
-</script>
-<noscript>Your browser does not support JavaScript!</noscript>
+// Test to see if the browser supports the HTML template element by checking
+// for the presence of the template element's content attribute.
+if ('content' in document.createElement('template')) {
+
+  // Instantiate the table with the existing HTML tbody and the row with the template
+  var t = document.querySelector('#productrow'),
+  td = t.content.querySelectorAll("td");
+  td[0].textContent = "Angie";
+  td[1].textContent = "Pink";
+
+  // Clone the new row and insert it into the table
+  var tb = document.getElementsByTagName("tbody");
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "Charles";
+  td[1].textContent = "Purple";
+
+  // Clone the new row and insert it into the table
+  var clone2 = document.importNode(t.content, true);
+  tb[0].appendChild(clone2);
+  
+  // Create a new row
+  td[0].textContent = "Edward";
+  td[1].textContent = "Blue";
+  
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "Jiajie";
+  td[1].textContent = "Blue";
+  
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "Wai Ho";
+  td[1].textContent = "Green";
+
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+
+} else {
+  // Find another way to add the rows to the table because 
+  // the HTML template element is not supported.
+}</script>
 
 <h2>Code</h2>
 <textarea>
 <p>If your browser supports JavaScript,</p>
-  <ul>
-    <li>you should see "Hello World!" below.</li>
-    <li>if you click <a href="#" onClick="alert('hey')">here</a>, you'll get a pop-up alert.</li>
-  </ul>
+<ul>
+  <li>you should see "Hello World!" below.</li>
 
+    <script>
+      document.write("<h1 style='background-color:yellow'>Hello World!</h1>")
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+  <li>if you click <button onClick="alert('hey')">here</button>, you'll get a pop-up alert.</li>
+  <li>the blue 100x100 canvas with a small red square inside of it that I've drawn using JavaScript should show up below.</li>
+
+    <canvas id="myCanvas">Your browser does not support the HTML5 canvas tag.</canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(0, 0, 100, 100);
+      ctx.fillStyle = "red";
+      ctx.fillRect(0, 0, 10,10)
+    </script>
+</ul>
+
+<h3>Templates</h3>
+
+<table id="producttable2">
+  <caption>This is a table that holds no rows in basic HTML.</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Favorite Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- existing data could optionally be included here -->
+  </tbody>
+</table>
+
+<p>We make a template for the row in HTML, and then server the actual data using JavaScript.</p>
+
+<template id="productrow">
+  <tr>
+    <td class="record"></td>
+    <td></td>
+  </tr>
+</template>
 
 <script>
-document.write("<h1 style='background-color:yellow'>Hello World!</h1>")
-</script>
-<noscript>Your browser does not support JavaScript!</noscript>
+// Test to see if the browser supports the HTML template element by checking
+// for the presence of the template element's content attribute.
+if ('content' in document.createElement('template')) {
 
+  // Instantiate the table with the existing HTML tbody and the row with the template
+  var t = document.querySelector('#productrow'),
+  td = t.content.querySelectorAll("td");
+  td[0].textContent = "Angie";
+  td[1].textContent = "Pink";
+
+  // Clone the new row and insert it into the table
+  var tb = document.getElementsByTagName("tbody");
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "Charles";
+  td[1].textContent = "Purple";
+
+  // Clone the new row and insert it into the table
+  var clone2 = document.importNode(t.content, true);
+  tb[0].appendChild(clone2);
+  
+  // Create a new row
+  td[0].textContent = "Edward";
+  td[1].textContent = "Blue";
+  
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "Jiajie";
+  td[1].textContent = "Blue";
+  
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "Wai Ho";
+  td[1].textContent = "Green";
+
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+
+} else {
+  // Find another way to add the rows to the table because 
+  // the HTML template element is not supported.
+}</script>
 </textarea>
 
 <!-- END CONTENT OF THE PAGE! -->
