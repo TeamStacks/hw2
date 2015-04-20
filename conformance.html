@@ -33,18 +33,85 @@
   </h2>
   
   <p>
-    We tested our site using Internet Explorer, Mozilla Firefox, and Google Chrome
+    We tested our site using Internet Explorer, Mozilla Firefox, and Google Chrome. We have listed the non-supported elements and oddities that we found per page down below.
   </p>
-  
-  <p>
-    <ol>
-      <li>
-        The <code>rb</code> and <code>rtc</code> tags are specified in the HTML5 specification,
-        but using them according to the specification does not pass the validation.</li>
-      <li>Internet Explorer does not support webm video format.</li>
-      <li>Mozilla Firefox does not support track tag.</li>
-    </ol>
-  </p>
+<ul>
+
+<li>General
+  <ul>
+    <li>Page is completely left-aligned in IE versions 5 - 8</li>
+    <li>Some of the navbar styling is gone in IE versions 5 - 8</li>
+    <li>Spacing is less consistent for certain Unicode characters e.g. Chinese characters</li>
+    <li>Text, headers, etc. in IE versions 8 and below are generally much larger than in Chrome and Firefox.</li>
+  </ul>
+</li>
+
+<li>Formatting
+  <ul>
+    <li>datetime attribute is inconsistent for different elements. e.g. <code>ins</code> and <code>time</code>. datetime=”2015-04-20 17:00” is valid when inside a <code>time</code> tag but is not valid when inside a <code>ins</code> tag.</li>
+    <li>Firefox uses a dotted underline to indicate HTML elements with the title attribute; IE and Chrome do not.</li>
+  </ul>
+</li>
+
+<li>Forms
+  <ul>
+    <li>Each browser has its own styling for certain HTML elements. For instance, the progress bar in IE looks very different from the progress bar in Chrome and Firefox.</li>
+  </ul>
+</li>
+
+<li>Images
+  <ul>
+    <li>No noticeable differences.</li>
+  </ul>
+</li>
+
+<li>Layouts
+  <ul>
+    <li>??</li>
+  </ul>
+</li>
+
+<li>Lists
+  <ul>
+    <li>No noticeable differences</li>
+  </ul>
+</li>
+
+<li>Media
+  <ul>
+    <li>Internet Explorer does not support webm video format.</li>
+    <li>Mozilla Firefox does not support track tag.</li>
+  </ul>
+</li>
+
+<li>Ruby
+  <ul>
+    <li>The <code>rb</code> and <code>rtc</code> tags are specified in the HTML5 specification, but using them according to the specification does not pass the validation.</li>
+  </ul>
+</li>
+
+<li>Scripts
+  <ul>
+    <li>On Windows 8, the JavaScript alert triggers a soundfile. No sound is triggered when the alert occurs in Chrome or Firefox.</li>
+    <li>Firefox dims the rest of the page on alert.</li>
+    <li>IE displays the alert in the middle of the screen, regardless of browser size or position. Chrome and Firefox both display the alert vertically-centered within the browser.</li>
+    <li>Template tag does not work in IE i.e. none of the data served up is displayed.</li>
+  </ul>
+</li>
+
+<li>Style
+  <ul>
+    <li><code>bdi</code> does not pass conformance validation, there it was not included.</li>
+  </ul>
+</li>
+
+<li>Tables
+  <ul>
+    <li>No noticeable differences.</li>
+  </ul>
+</li>
+
+</ul>
 
 <!-- END CONTENT OF THE PAGE! -->
 </section>
